@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-    <meta name="keywords" content="Whiteboard Animation,Drawing Videos,Whiteboard Videos,Video Scribe,Sketch Videos,Whiteboard Video, Animation, Explainer Video, Video Scribe, Hand Drawing Video, Chalkboard Video, Online Spokesperson, Video Spokesperson, Website Talking Heads, Website Actor, Website Video, Virtual Spokesperson, Spokesperson, Video Presenter, Website Presenter, Website Spokesperson">
-    <meta name="description" content="Not all Whiteboard Animation style videos are alike, so, we work with you to create the best sketch video for your company. We focus on supercharged messages utilizing a video scribing style whiteboard commercials that triggers focus and engagement That's where we come in. We create high impact, exciting whiteboard animation VIDEOS that explain your product, service, software or business.">
+	<meta name="keywords" content="Whiteboard Animation,Drawing Videos,Whiteboard Videos,Video Scribe,Sketch Videos,Whiteboard Video, Animation, Explainer Video, Video Scribe, Hand Drawing Video, Chalkboard Video, Online Spokesperson, Video Spokesperson, Website Talking Heads, Website Actor, Website Video, Virtual Spokesperson, Spokesperson, Video Presenter, Website Presenter, Website Spokesperson">
+	<meta name="description" content="Not all Whiteboard Animation style videos are alike, so, we work with you to create the best sketch video for your company. We focus on supercharged messages utilizing a video scribing style whiteboard commercials that triggers focus and engagement That's where we come in. We create high impact, exciting whiteboard animation VIDEOS that explain your product, service, software or business.">
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="WebsiteTalkingHeads.com">
 	<title>Whiteboard Animation|Talking Heads®</title>
@@ -19,6 +19,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.typekit.net/xtn2ztk.css">
+	<?php include ('../../includes/googleanalytics.php'); ?>
 </head>
 
 <?php include("../includes/header.php"); ?>
@@ -114,6 +115,24 @@
 <script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
 <script src="../../js/iVideo.js"></script>
 <script src="../js/nav.js"></script>
+<!-- Google Code for Previous Visitors -->
+<!-- Remarketing tags may not be associated with personally identifiable 
+information or placed on pages related to sensitive categories. For 
+instructions on adding this tag and more information on the above 
+requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 1058129782;
+	var google_conversion_label = "-jOyCO6ZkAIQ9o7H-AM";
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+	<div style="display:inline;"> <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1058129782/?value=0&amp;label=-jOyCO6ZkAIQ9o7H-AM&amp;guid=ON&amp;script=0"/> </div>
+</noscript>
 </body>
 
 </html>

@@ -8,26 +8,24 @@
 .modal-header, .modal-footer { padding: 0.1rem 1rem; }
 .modal-header .btn, .modal-footer .btn { font-size: .8rem }
 #form { top: 60px; background: white; max-width: 100%; min-width: 420px; margin: 0 auto; position: absolute }
-.poster { padding-bottom: .5rem; }
-.poster { opacity: 0.95; -webkit-transition: opacity .5s; transition: opacity .5s; position: relative; cursor: pointer; }
-.poster:hover { opacity: 1 }
-.poster img, .poster-large img { display: block; width: 100%; height: auto; }
-.poster-title { }
+.poster { padding-bottom: .5rem;}
+.poster{ opacity: 0.95; -webkit-transition: opacity .5s; transition: opacity .5s; position: relative; cursor: pointer; }
+.poster:hover{ opacity: 1 }
+.poster img,.poster-large img { display: block; width: 100%; height: auto; }
+.poster-title {}
 .poster-button { position: absolute; top: 50%; height: 132px; width: 132px; left: 50%; margin-left: -72px; margin-top: -36px; transition: .5s ease; opacity: 1;border-radius: 50% }
-.poster-button::before { position: absolute; left: 2px; top: -28px; bottom: auto; right: auto; font-family: "Font Awesome 5 Pro"; font-weight: 600; content: "\f144";color:white;font-size: 128px; }
+.poster-button::before { position: absolute; left: 2px; top: -24px; bottom: auto; right: auto; font-family: "Font Awesome 5 Pro"; font-weight: 600; content: "\f144";color:white;font-size: 128px; }
 .poster-button:hover { opacity: 0.7 }
 .poster-button-small { opacity: 1; position: absolute; top: 50%; height: 36px; width: 36px; left: 50%; margin-left: -18px; margin-top: -18px; transition: .5s ease; border-radius: 50% }
 .poster-button-small:hover { opacity: .5 }
 .poster-button-small::before { position: absolute; left: 2px; top: -6px; bottom: auto; right: auto; font-family: "Font Awesome 5 Pro"; font-weight: 600; content: "\f144";color:white;font-size: 32px; vertical-align: top; }
-
+input,textarea{background: #D5EEFF}
 @media screen and (max-width:1000px) {
-.poster:nth-child(1n + 3) { display: none }
+	.poster:nth-child(1n + 3) { display: none}
 }
-
 @media screen and (max-width:768px) {
-.poster:nth-child(1n + 4) { display: block }
+	.poster:nth-child(1n + 4) { display:block}
 }
-
 @media screen and (max-width:576px) {
-.poster:nth-child(1n + 6) { display: none }
+	.poster:nth-child(1n + 6) { display: none}
 }

@@ -19,6 +19,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.typekit.net/xtn2ztk.css">
+	<?php include ('../../includes/googleanalytics.php'); ?>
 </head>
 
 <?php include("../includes/header.php"); ?>
@@ -29,8 +30,8 @@
 			<div class="col-xl-5 offset-2" id="video-holder">
 				<?php 
     $video = "Whiteboard Animation";
-    $bgColor = "#7F5200";
-    $btnColor = "#FFA500";
+    $bgColor = "#7ECDF4";
+    $btnColor = "#3D9CEB";
 	$alt = "Whiteboard Animation Demo";
     include("../../ivideo/showVideo.php"); 
     ?>
@@ -41,12 +42,12 @@
 		</div>
 	</div>
 </section>
-<section class="content-top">
+<section class="content">
 	<h2 class="banner-bottom-text">Hand Drawing Videos, Whiteboard Animation Videos, Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
 </section>
 <section class="container p-2">
 	<?php include( "../includes/testimonial-awards.php"); ?>
-	<h2 class="text-center text-primary display-3"><strong>See Custom Examples</strong></h2>
+	<h2 class="custom text-primary display-3">See Custom Examples</h2>
 </section>
 <section class="content">
 	<div class="container">
@@ -56,19 +57,16 @@
     $show = "15";
 	$rand = false;
 	$columns = 3;
-    include("../../ivideo/showDemoWhiteboard.php"); 
+    include("../../ivideo/showDemo.php"); 
     ?>
 		</div>
 		<div class="d-box pb-1">
 			<a href="../../mrss/whiteboard.rss"><img class="mx-auto d-block" src="../../mrss/images/Talking-Heads-RSS-Feed.png" width="28" height="28" title="Talking Heads Whiteboard® RSS Feed" alt="Talking Heads® Whiteboard RSS Feed"/></a>
 </section>
-		<section class="content-top">
-	<h2 class="banner-bottom-text p-0">Animation Videos<br /><a href="../../videopresentations/animation.php">More Examples</a></h2>
-</section>
 <section class="content">
 	<div class="container text-center">
 		<div class="examples clearfix p-2">
-			
+			<h2 class="banner-bottom-text p-0">Animation Videos<br /><a href="../../videopresentations/animation.php">More Examples</a></h2>
 			<?php 
     $type = "Animation";
     $show = "6";
@@ -87,11 +85,9 @@
 <div class="ten"></div>
 </div>
 </section>
-<section class="content-top">
-	<h2 class="banner-bottom-text pt-3">Custom Whiteboard Video</h2>
-</section>
 <section class="content">
 	<div class="container">
+		<h1 class="banner-bottom-text pt-3">Custom Whiteboard Video</h1>
 		<h3 class="text-capitalize text-center p-2">Keep visitors&apos; attention and boost sales</h3>
 		<div class="row p-2">
 			<div class="col-6">
@@ -104,27 +100,29 @@
 		</div>
 	</div>
 </section>
-<section class="content-top mt-3">
-	<h2 class="banner-bottom-text pt-3">Whiteboard Styles</h2>
-</section>
-<section class="container-fluid content">
+<section class="content">
 	<div class="container">
-		<div class="container pt-2">
-			<div class="d-flex align-items-center">
-				<div class="col-lg-6" id="video-holder">
-					<?php 
+		<section class="content">
+			<div class="container pt-2">
+				<h2 class="banner-bottom-text text-center">Whiteboard Styles</h2>
+				<div class="container p-2">
+					<div class="d-flex align-items-center">
+						<div class="col-lg-6" id="video-holder">
+							<?php 
     $video = "Custom vs Generic";
     $bgColor = "#D5EEFF";
-    $btnColor = "#FFA500";
+    $btnColor = "#B1C8DA";
 	$alt = "Custom vs Generic Whiteboard Videos";
     include("../../ivideo/showVideo.php"); 
     ?>
-				</div>
-				<div class="col-6">
-					<div class="content-text">Obviously, not all whiteboard style videos are alike, so,we work with you to create the best whiteboard video for your company. We focus on supercharged messages utilizing a hand drawn whiteboard commercials for that triggers focus and engagement That&apos;s where we come in. We create high impact, exciting whiteboard illustrator VIDEOS that explain your product, service, software or business.</div>
+						</div>
+						<div class="col-6">
+							<div class="content-text">Obviously, not all whiteboard style videos are alike, so,we work with you to create the best whiteboard video for your company. We focus on supercharged messages utilizing a hand drawn whiteboard commercials for that triggers focus and engagement That&apos;s where we come in. We create high impact, exciting whiteboard illustrator VIDEOS that explain your product, service, software or business.</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</div>
 </section>
 <?php include("../includes/footer.php"); ?>
@@ -132,6 +130,24 @@
 <script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
 <script src="../../js/iVideo.js"></script>
 <script src="../js/nav.js"></script>
+<!-- Google Code for Previous Visitors -->
+<!-- Remarketing tags may not be associated with personally identifiable 
+information or placed on pages related to sensitive categories. For 
+instructions on adding this tag and more information on the above 
+requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 1058129782;
+	var google_conversion_label = "-jOyCO6ZkAIQ9o7H-AM";
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+	<div style="display:inline;"> <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1058129782/?value=0&amp;label=-jOyCO6ZkAIQ9o7H-AM&amp;guid=ON&amp;script=0"/> </div>
+</noscript>
 </body>
 
 </html>

@@ -8,16 +8,16 @@ header { border-bottom: thin solid rgba(255, 112, 98,0.3) }
 .current-page { color: grey!important; cursor: default }
 .navbar-text, .navbar-brand { font-size: 3vw; color: #FFA500!important; font-weight: 900 }
 .navbar-text a, .navbar-brand a { color: #FFA500!important }
-.bg-image { margin: 0; padding: 0 0 2rem; background: #ffedcc; background: -moz-linear-gradient(top, #ffedcc 0%, #ffa500 100%); background: -webkit-linear-gradient(top, #ffedcc 0%, #ffa500 100%); background: linear-gradient(to bottom, #ffedcc 0%, #ffa500 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffedcc', endColorstr='#ffa500', GradientType=0 );
-}
+.bg-image { margin: 0; padding: 0 0 2rem; background: #ffedcc; }
 .wrap { max-width: 960px; margin: 0 auto; }
 .content-text { font-size: 1.2rem; color: #222; line-height: 1.3; text-align: justify; text-indent: 2rem }
 .content { background: #FFEDCC; }
-.content-top { background: #ffa500; background: -moz-linear-gradient(top, #ffa500 0%, #ffedcc 100%); background: -webkit-linear-gradient(top, #ffa500 0%, #ffedcc 100%); background: linear-gradient(to bottom, #ffa500 0%, #ffedcc 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa500', endColorstr='#ffedcc', GradientType=0 );color: #401C19;padding: 1rem 0}
+.content-top { background: #ffa500; background: -moz-linear-gradient(top, #ffa500 0%, #ffedcc 100%); background: -webkit-linear-gradient(top, #ffa500 0%, #ffedcc 100%); background: linear-gradient(to bottom, #ffa500 0%, #ffedcc 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa500', endColorstr='#ffedcc', GradientType=0 );
+color: #401C19; padding: 1rem 0 }
 a { color: #FFA500 }
-a:hover{color: #402900}
-.footer-wrap { padding: 22px 0; background: #ffa500; background: -moz-linear-gradient(top, #ffa500 0%, #ffedcc 50%, #ffa500 100%); background: -webkit-linear-gradient(top, #ffa500 0%, #ffedcc 50%, #ffa500 100%); background: linear-gradient(to bottom, #ffa500 0%, #ffedcc 50%, #ffa500 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa500', endColorstr='#ffa500', GradientType=0 );
-width: 100% }
+a:hover { color: #402900 }
+.footer-wrap { font-weight: 800;padding: 22px 0; width: 100%; background: #ffc04c; background: -moz-radial-gradient(center, ellipse cover, #ffc04c 0%, #ffa500 100%); background: -webkit-radial-gradient(center, ellipse cover, #ffc04c 0%, #ffa500 100%); background: radial-gradient(ellipse at center, #ffc04c 0%, #ffa500 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc04c', endColorstr='#ffa500', GradientType=1 )
+}
 footer { width: 960px; margin: 0 auto; text-align: center; font-size: 0.8rem; color: #401C19; }
 footer a { color: #401C19; }
 footer a:hover { color: #ffffff; }
@@ -37,19 +37,28 @@ background-image: -khtml-gradient(linear, left top, left bottom, from(#FFEDCC), 
 .captcha-holder { max-width: 100%; margin: 0 auto; overflow: hidden; border-left: 2px solid #7F3831; border-right: 2px solid #7F3831; background: #FFEDCC; }
 .g-recaptcha { margin: 0 auto; width: 304px }
 .btn-holder { border-color: #7F3831; border-style: solid; border-width: 0 2px 2px 2px; background: #FFEDCC; padding: .2rem 0 .6rem; border-bottom-left-radius: .5rem; border-bottom-right-radius: .5rem }
-.btn-custom { background-color: #FFA500 !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7F5200", endColorstr="#402900");
-background-image: -khtml-gradient(linear, left top, left bottom, from(#7F5200), to(#402900)); background-image: -moz-linear-gradient(top, #7F5200, #402900); background-image: -ms-linear-gradient(top, #7F5200, #402900); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7F5200), color-stop(100%, #402900)); background-image: -webkit-linear-gradient(top, #7F5200, #402900); background-image: -o-linear-gradient(top, #7F5200, #402900); background-image: linear-gradient(#7F5200, #402900); border-color: #402900 #402900 hsl(11, 100%, 63%); color: #FFF6E5 !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33); -webkit-font-smoothing: antialiased; border-radius: 16px; margin: 4px auto 0; width: 240px; font-size: 2rem!important; font-weight: 700!important; text-align: center }
-.btn-custom:hover { background-color: #FFC966!important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#FFC966");
-background-image: -khtml-gradient(linear, left top, left bottom, from(#FFA500), to(#FFC966)); background-image: -moz-linear-gradient(top, #FFA500, #FFC966); background-image: -ms-linear-gradient(top, #FFA500, #FFC966); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFA500), color-stop(100%, #FFC966)); background-image: -webkit-linear-gradient(top, #FFA500, #FFC966); background-image: -o-linear-gradient(top, #FFA500, #FFC966); background-image: linear-gradient(#FFA500, #FFC966); border-color: #FFC966; color: #7F5200 !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.52); -webkit-font-smoothing: antialiased; }
+.btn-custom { -webkit-font-smoothing: antialiased; border-radius: 16px; margin: 4px auto 0; width: 240px; font-size: 2rem!important; font-weight: 700!important; text-align: center; background-color: #0050B2!important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0073FF", endColorstr="#0050B2");
+background-image: -khtml-gradient(linear, left top, left bottom, from(#0073FF), to(#0050B2)); background-image: -moz-linear-gradient(top, #0073FF, #0050B2); background-image: -ms-linear-gradient(top, #0073FF, #0050B2); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0073FF), color-stop(100%, #0050B2)); background-image: -webkit-linear-gradient(top, #0073FF, #0050B2); background-image: -o-linear-gradient(top, #0073FF, #0050B2); background-image: linear-gradient(#0073FF, #0050B2); border-color: #0050B2; color: #7ECDF4 !important; text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5); }
+.btn-custom:hover { background-color: hsl(201, 100%, 64%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eaf7ff", endColorstr="#47beff");
+background-image: -khtml-gradient(linear, left top, left bottom, from(#eaf7ff), to(#47beff)); background-image: -moz-linear-gradient(top, #eaf7ff, #47beff); background-image: -ms-linear-gradient(top, #eaf7ff, #47beff); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaf7ff), color-stop(100%, #47beff)); background-image: -webkit-linear-gradient(top, #eaf7ff, #47beff); background-image: -o-linear-gradient(top, #eaf7ff, #47beff); background-image: linear-gradient(#eaf7ff, #47beff); border-color: #47beff #47beff hsl(201, 100%, 56%); color: #0050B2 !important; text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5); }
+.btn-custom:hover { background-color: hsl(201, 100%, 64%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eaf7ff", endColorstr="#47beff");
+background-image: -khtml-gradient(linear, left top, left bottom, from(#eaf7ff), to(#47beff)); background-image: -moz-linear-gradient(top, #eaf7ff, #47beff); background-image: -ms-linear-gradient(top, #eaf7ff, #47beff); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaf7ff), color-stop(100%, #47beff)); background-image: -webkit-linear-gradient(top, #eaf7ff, #47beff); background-image: -o-linear-gradient(top, #eaf7ff, #47beff); background-image: linear-gradient(#eaf7ff, #47beff); border-color: #47beff #47beff hsl(201, 100%, 56%); color: #0050B2 !important; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); }
 .client { text-align: center }
 .testimonials p { text-indent: 2rem; font-style: italic; line-height: 1.2; font-size: 1.5 }
 .caption { float: right; font-weight: bold; font-size: 2rem }
 .best { margin: 0 auto }
+.award { width: 75%; margin: 0 auto }
+textarea { width: 100% }
+.bd-blue { border: medium solid #549BFF; padding: .5rem; border-radius: .5rem }
+.bg-grey { background: #888888 }
+.custom { text-align: center; font-weight: 800 }
+input, textarea { background: #D5EEFF }
 
 @media screen and (min-width:1400px) {
 .banner-bottom-text { font-size: 32px }
 .banner-text { font-size: 32px }
 .nav-link { font-size: 28px }
+#get-a-quote { max-width: 340px; float: left }
 }
 
 @media screen and (max-width:1200px) {
