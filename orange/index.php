@@ -24,7 +24,7 @@
 
 <?php include("../includes/header.php"); ?>
 <section class="jumbotron-fluid bg-image">
-	<h1 class="banner-text">Cool Explainer Videos, Whiteboard Sketch Videos, Drawing Animation too!</h1>
+	<h1 class="banner-text">Cool Whiteboard Videos, Whiteboard Sketch Videos, Drawing Animation too!</h1>
 	<div class="mt-2">
 		<div class="row d-flex align-items-center">
 			<div class="col-xl-5 offset-2" id="video-holder">
@@ -87,42 +87,40 @@
 </section>
 <section class="content">
 	<div class="container">
-		<h1 class="banner-bottom-text pt-3">Custom Whiteboard Video</h1>
-		<h3 class="text-capitalize text-center p-2">Keep visitors&apos; attention and boost sales</h3>
-		<div class="row p-2">
-			<div class="col-6">
-				<img src="https://www.websitetalkingheads.com/images/explainer-video-banner.png" alt="Best Explainer Video Companies" class="mt-1 img-fluid mx-auto" title="Best Explainer Video Companies">
-			</div>
-			<div class="col-6">
-				<p class="content-text">At Talking Heads we don&apos;t just make whiteboard Explainer videos. We have spent years studying the art of persuasion and communication. Your story must be told well. So we collaborate to customize and create a video that boost leads and increases sales in your product or service.</p>
-				<p class="content-text">Talking Heads&apos; Explainer videos stimulate your viewers&apos; brains. Mirror neutrons in the brain make the viewer think it&apos;s his or her hand drawing, triggering a dopamine rush in the brain and increase the viewers capacity to focus and remember. The brain is now curious and pays more attention wondering what the whiteboard drawing will become. As it tries to guess what the sketch will become, it focuses more and rewards itself. This happens over and over. Whiteboard sketch is like a time machine with each new drawing practically hypnotizing your viewer. Because of this hyper focus, the viewer also remembers more of your whiteboard animation that regular videos.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="content">
-	<div class="container">
-		<section class="content">
-			<div class="container pt-2">
-				<h2 class="banner-bottom-text text-center">Whiteboard Styles</h2>
-				<div class="container p-2">
-					<div class="d-flex align-items-center">
-						<div class="col-lg-6" id="video-holder">
-							<?php 
-    $video = "Custom vs Generic";
-    $bgColor = "#D5EEFF";
-    $btnColor = "#B1C8DA";
-	$alt = "Custom vs Generic Whiteboard Videos";
-    include("../../ivideo/showVideo.php"); 
-    ?>
-						</div>
-						<div class="col-6">
-							<div class="content-text">Obviously, not all whiteboard style videos are alike, so,we work with you to create the best whiteboard video for your company. We focus on supercharged messages utilizing a hand drawn whiteboard commercials for that triggers focus and engagement That&apos;s where we come in. We create high impact, exciting whiteboard illustrator VIDEOS that explain your product, service, software or business.</div>
-						</div>
+		<div class="card-group p-3">
+			<div class="card">
+				<h3 class="card-header">Custom Whiteboard Video</h3>
+				<div class="card-img-top">
+					<div class="poster-large" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Custom vs Generic">
+						<div class="poster-button" style="background:#6BCEFF"></div>
+						<img src="https://www.websitetalkingheads.com/ivideo/videos/Custom vs Generic.jpg" class="img-fluid video" alt="Custom vs Generic Whiteboard Videos">
 					</div>
 				</div>
+				<div class="card-body">
+					<h5 class="card-title text-capitalize">Keep visitors&apos; attention and boost sales</h5>
+					<p class="card-text">At Talking Heads we don&apos;t just make whiteboard Whiteboard videos. We have spent years studying the art of persuasion and communication. Your story must be told well. So we collaborate to customize and create a video that boost leads and increases sales in your product or service.</p>
+					<p class="card-text">Talking Heads&apos; Whiteboard videos stimulate your viewers&apos; brains. Mirror neutrons in the brain make the viewer think it&apos;s his or her hand drawing, triggering a dopamine rush in the brain and increase the viewers capacity to focus and remember. The brain is now curious and pays more attention wondering what the whiteboard drawing will become. As it tries to guess what the sketch will become, it focuses more and rewards itself. This happens over and over. Whiteboard sketch is like a time machine with each new drawing practically hypnotizing your viewer. Because of this hyper focus, the viewer also remembers more of your whiteboard animation that regular videos.</p>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+					</p>
+				</div>
 			</div>
-		</section>
+			<div class="card">
+				<h3 class="card-header">Whiteboard Styles</h3>
+				<div class="card-img-top">
+					<div class="poster-large" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Sketch Videos">
+						<div class="poster-button" style="background:#6BCEFF"></div>
+						<img src="https://www.websitetalkingheads.com/ivideo/videos/Sketch Videos.jpg" class="img-fluid video" alt="Sketch Videos Example">
+					</div>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title text-capitalize">Keep visitors&apos; attention and boost sales</h5>
+					<p class="card-text">Obviously, not all whiteboard style videos are alike, so,we work with you to create the best whiteboard video for your company. We focus on supercharged messages utilizing a hand drawn whiteboard commercials for that triggers focus and engagement That&apos;s where we come in. We create high impact, exciting whiteboard illustrator VIDEOS that explain your product, service, software or business.</p>
+					<p class="card-text">We are the number one whiteboard video production company in the industry. Our mission is to create unique and engaging videos tailored to the specific needs of your business. Our videos not only explain your product, but they also explain why your customers need it. We will help you explain your business to the world in seconds with original video content.</p>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 <?php include("../includes/footer.php"); ?>
