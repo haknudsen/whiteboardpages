@@ -8,17 +8,17 @@
 .modal-header, .modal-footer { padding: 0.1rem 1rem; }
 .modal-header .btn, .modal-footer .btn { font-size: .8rem }
 #form { top: 60px; background: white; max-width: 100%; min-width: 420px; margin: 0 auto; position: absolute }
-.poster { padding-bottom: 1px; opacity: 0.95; -webkit-transition: opacity .5s; transition: opacity .5s; position: relative; cursor: pointer }
+.poster { padding-bottom: 1px; opacity: 0.92; -webkit-transition: opacity .5s; transition: opacity .5s; position: relative; cursor: pointer }
 .poster:hover { opacity: 1 }
 .poster img, .poster-large img { display: block; width: 100%; height: auto; cursor: pointer; }
 .poster-button { position: absolute; top: 50%; height: 132px; width: 132px; left: 50%; margin-left: -72px; margin-top: -36px; transition: .5s ease; opacity: 1; border-radius: 50% }
 .poster-button::before, .btn-play::before { position: absolute; left: 2px; top: -28px; bottom: auto; right: auto; font-family: "Font Awesome 5 Pro"; font-weight: 600; content: "\f144"; color: white; font-size: 128px; }
-.poster-button:hover { opacity: 0.7 }
-.poster-button-small { opacity: 1; position: absolute; top: 50%; height: 36px; width: 36px; left: 50%; margin-left: -18px; margin-top: -18px; transition: .5s ease; border-radius: 50% }
-.poster-button-small:hover { opacity: .5 }
-.poster-button-small::before { position: absolute; left: 2px; top: -6px; bottom: auto; right: auto; font-family: "Font Awesome 5 Pro"; font-weight: 600; content: "\f144"; color: white; font-size: 32px; vertical-align: top; }
-.poster .btn-play { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #0072FF; color: white; height: 132px; width: 132px; border: none; cursor: pointer; border-radius: 50%; text-align: center; }
-.poster .btn-play:hover { background-color: #6BCEFF; }
+.poster-button:hover, .poster-button-small:hover { opacity: 0.7 }
+.poster .btn-play, .poster .btn-play-small { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #0072FF; color: white; border: none; cursor: pointer; border-radius: 50%; text-align: center; }
+.poster .btn-play { height: 132px; width: 132px; }
+.btn-play:hover, .btn-play-small:hover { background-color: #0050B2;border-color: #0072FF!important }
+.poster .btn-play-small { height: 48px; width: 48px;border: 2px solid white }
+.btn-play-small::before { font-family: "Font Awesome 5 Pro"; font-weight: 600; content: "\f04b"; color: white; font-size: 22px; position: absolute; top: 50%; left: 53%; transform: translate(-50%, -50%); }
 
 @media screen and (max-width:1000px) {
 .poster:nth-child(1n + 3) { display: none }

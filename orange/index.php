@@ -57,7 +57,7 @@
     $show = "15";
 	$rand = false;
 	$columns = 3;
-    include("../../ivideo/showDemo.php"); 
+    include("../includes/showDemoBtn.php"); 
     ?>
 		</div>
 </section>
@@ -73,7 +73,7 @@
     $show = "6";
 	$rand = true;
 	$columns = 3;
-    include("../../ivideo/showDemo.php"); 
+    include("../includes/showDemoBtn.php"); 
     ?>
 		</div>
 	</div>
