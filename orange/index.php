@@ -49,9 +49,9 @@
 	<?php include( "../includes/testimonial-awards.php"); ?>
 	<h2 class="custom text-primary display-3">See Custom Examples</h2>
 </section>
-<section class="content">
+<section class="content p-2">
 	<div class="container">
-		<div class="examples clearfix p-2">
+		<div class="examples">
 			<?php 
     $type = "Whiteboard";
     $show = "15";
@@ -60,12 +60,13 @@
     include("../../ivideo/showDemo.php"); 
     ?>
 		</div>
-		<div class="d-box pb-1">
-			<a href="../../mrss/whiteboard.rss"><img class="mx-auto d-block" src="../../mrss/images/Talking-Heads-RSS-Feed.png" width="28" height="28" title="Talking Heads Whiteboard® RSS Feed" alt="Talking Heads® Whiteboard RSS Feed"/></a>
 </section>
-<section class="content">
+<section class="content d-box p-1">
+	<a href="../../mrss/whiteboard.rss"><img class="mx-auto d-block" src="../../mrss/images/Talking-Heads-RSS-Feed.png" width="28" height="28" title="Talking Heads Whiteboard® RSS Feed" alt="Talking Heads® Whiteboard RSS Feed"/></a>
+</section>
+<section class="content p-2">
 	<div class="container text-center">
-		<div class="examples clearfix p-2">
+		<div class="examples">
 			<h2 class="banner-bottom-text p-0">Animation Videos<br /><a href="../../videopresentations/animation.php">More Examples</a></h2>
 			<?php 
     $type = "Animation";
@@ -79,44 +80,49 @@
 </section>
 <div class="video-bottom"></div>
 <div class="call-now mx-auto">
-	<h2>CALL NOW to Get Results!</h2>
-	<h3><a href="tel://801-748-2281" title="Give us a call.">801-748-2281</a></h3>
+	<h2 class="display-3 text-primary">CALL NOW to Get Results!</h2>
+	<h3 class="display-3"><a href="tel://1-801-748-2281" title="Give us a call.">801-748-2281</a></h3>
 </div>
 <div class="ten"></div>
 </div>
 </section>
 <section class="content">
-	<div class="container">
-		<div class="card-group p-3">
+	<div class="container p-3">
+		<div class="card-deck">
 			<div class="card">
 				<h3 class="card-header">Custom Whiteboard Video</h3>
 				<div class="card-img-top">
-					<div class="poster-large" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Custom vs Generic">
-						<div class="poster-button" style="background:#6BCEFF"></div>
+					<div class="poster" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Custom vs Generic">
+						<div class="btn-play"></div>
 						<img src="https://www.websitetalkingheads.com/ivideo/videos/Custom vs Generic.jpg" class="img-fluid video" alt="Custom vs Generic Whiteboard Videos">
 					</div>
 				</div>
 				<div class="card-body">
-					<h5 class="card-title text-capitalize">Keep visitors&apos; attention and boost sales</h5>
+					<h5 class="card-title text-capitalize">Completely Original</h5>
 					<p class="card-text">At Talking Heads we don&apos;t just make whiteboard Whiteboard videos. We have spent years studying the art of persuasion and communication. Your story must be told well. So we collaborate to customize and create a video that boost leads and increases sales in your product or service.</p>
 					<p class="card-text">Talking Heads&apos; Whiteboard videos stimulate your viewers&apos; brains. Mirror neutrons in the brain make the viewer think it&apos;s his or her hand drawing, triggering a dopamine rush in the brain and increase the viewers capacity to focus and remember. The brain is now curious and pays more attention wondering what the whiteboard drawing will become. As it tries to guess what the sketch will become, it focuses more and rewards itself. This happens over and over. Whiteboard sketch is like a time machine with each new drawing practically hypnotizing your viewer. Because of this hyper focus, the viewer also remembers more of your whiteboard animation that regular videos.</p>
-					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+				<div class="card-footer">
+					<p class="card-text"><small><a href="https://www.websitetalkingheads.com/videopresentations/" title="Other Types of Video">Other Types of Videos</a></small>
 					</p>
 				</div>
 			</div>
 			<div class="card">
 				<h3 class="card-header">Whiteboard Styles</h3>
 				<div class="card-img-top">
-					<div class="poster-large" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Sketch Videos">
-						<div class="poster-button" style="background:#6BCEFF"></div>
-						<img src="https://www.websitetalkingheads.com/ivideo/videos/Sketch Videos.jpg" class="img-fluid video" alt="Sketch Videos Example">
+					<div class="poster" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Sketch Videos">
+						<div class="btn-play"></div>
+						<img src="https://www.websitetalkingheads.com/ivideo/videos/Sketch Videos.jpg" class="img-fluid video" alt="Examples of Whiteboard Styles">
 					</div>
 				</div>
 				<div class="card-body">
 					<h5 class="card-title text-capitalize">Keep visitors&apos; attention and boost sales</h5>
 					<p class="card-text">Obviously, not all whiteboard style videos are alike, so,we work with you to create the best whiteboard video for your company. We focus on supercharged messages utilizing a hand drawn whiteboard commercials for that triggers focus and engagement That&apos;s where we come in. We create high impact, exciting whiteboard illustrator VIDEOS that explain your product, service, software or business.</p>
 					<p class="card-text">We are the number one whiteboard video production company in the industry. Our mission is to create unique and engaging videos tailored to the specific needs of your business. Our videos not only explain your product, but they also explain why your customers need it. We will help you explain your business to the world in seconds with original video content.</p>
-					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+					<p class="card-text">Our video content is 100% original, custom made for your video. We don't use templates or 'borrow' content from elsewhere.</p>
+				</div>
+				<div class="card-footer">
+					<p class="card-text"><small><a href="../animation.php" title="Animation Videos">Animation Videos</a></small>
 					</p>
 				</div>
 			</div>
