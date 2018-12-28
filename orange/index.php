@@ -33,7 +33,7 @@
     $bgColor = "#7ECDF4";
     $btnColor = "#3D9CEB";
 	$alt = "Whiteboard Animation Demo";
-    include("../../ivideo/showVideo.php"); 
+    include("../includes/showVideo.php"); 
     ?>
 			</div>
 			<div class="col-xl-3">
@@ -73,7 +73,11 @@
     $show = "6";
 	$rand = true;
 	$columns = 3;
+<<<<<<< HEAD
     include("../includes/showDemoBtn.php"); 
+=======
+    include("../includes/showDemoBtn.php");
+>>>>>>> whiteboard/master
     ?>
 		</div>
 	</div>
