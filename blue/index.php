@@ -35,9 +35,7 @@
 			<div class="fifty center">
 				<div class="d-flex justify-content-center pb-5 pt-2">
 					<div class="poster" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Whiteboard Animation">
-						<!--<a href="#" data-toggle="tooltip" title="Our Process" data-original-title="Our Process">-->
 							<div class="btn-play-md"></div>
-						<!--</a>-->
 					</div>
 				</div>
 				<div class="d-flex justify-content-center">
@@ -46,7 +44,7 @@
 			</div>
 		</div>
 		</div>
-		<h2 class="banner-bottom-text stroke">Hand Drawing Videos, Whiteboard Animation Videos,<br>Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
+		<h2 class="banner-bottom-text stroke">Hand Drawing Videos, Whiteboard Animation Videos, Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
 	</section>
 	<section class="alert alert-primary mb-0">
 		<div class="container">
@@ -72,7 +70,7 @@
 	<section class="content p-2">
 		<div class="container text-center">
 			<div class="examples">
-				<h2 class="banner-bottom-text p-0">Animation Videos<br /><a href="../../videopresentations/animation.php">More Examples</a></h2>
+				<h2 class="banner-bottom-text pt-1 pb-4 stroke">Animation Videos<br /><a href="../../videopresentations/animation.php">More Examples</a></h2>
 				<?php 
     $type = "Animation";
     $show = "6";
