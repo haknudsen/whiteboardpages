@@ -29,31 +29,24 @@
 		<div id="ytVideo"></div>
 		<div class="video-overlay"></div>
 		<?php include("includes/header-transparent.php"); ?>
-	<section class="container-fluid">
-		<h1 class="banner-text">Cool Explainer Videos, Whiteboard Sketch Videos, Spokesperson too!</h1>
-		<div class="container my-2">
-			<div class="row d-flex align-items-center">
-				<div class="col-lg-6" id="video-holder">
-					<?php 
-    $video = "Animated Alien Video";
-    $bgColor = "#00B46A";
-    $btnColor = "#2A2D26";
-	$alt = "Animated Aliens Video Demo";
-    include("includes/showVideo.php"); 
-    ?>
+	<section>
+			<h1 class="banner-text stroke">Cool Whiteboard Videos, Whiteboard Sketch Videos, Drawing Animation too!</h1>
+			<div class="fifty center">
+				<div class="d-flex justify-content-center pb-5 pt-2">
+					<div class="poster" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Whiteboard Animation">
+							<div class="btn-play-md"></div>
+					</div>
 				</div>
-				<div class="col-lg-2">
-					<?php include("../includes/awards-column.php"); ?>
-				</div>
-				<div class="col-lg-4">
+				<div class="d-flex justify-content-center">
 					<?php include( "includes/whiteboard-form.php"); ?>
 				</div>
 			</div>
 		</div>
+		</div>
+		<h2 class="banner-bottom-text stroke">Hand Drawing Videos, Whiteboard Animation Videos, Sketch, Video Scribe, Cartoon and Doodle Videos.</h2>
 	</section>
 	<section class="content">
 		<div class="container">
-			<h2 class="banner-bottom-text">Hand Drawing Videos, Whiteboard Animation Videos, Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
 			<div class="examples clearfix p-2">
 				<?php 
     $type = "Animation";
@@ -67,13 +60,12 @@
 				<a href="../mrss/animation.rss"><img class="mx-auto d-block" src="../mrss/images/Talking-Heads-RSS-Feed.png" width="28" height="28" title="Talking Heads® Animation RSS Feed" alt="Talking Heads® Animation RSS Feed"/></a>
 			</div>
 	</section>
-	<div class="video-bottom"></div>
-	<div class="call-now mx-auto">
-		<h2>CALL NOW to Get Results!</h2>
-		<h3><a href="tel://801-748-2281" title="Give us a call.">801-748-2281</a></h3>
-	</div>
-	<div class="ten"></div>
-	</div>
+	<section class="container-fluid">
+		<div class="call-now mx-auto">
+			<h2 class="display-3 text-primary stroke">CALL NOW to Get Results!</h2>
+			<h3 class="display-3 stroke"><a href="tel://1-801-748-2281" title="Give us a call.">801-748-2281</a></h3>
+		</div>
+		</div>
 	</section>
 	<section class="content">
 		<div class="container">
@@ -124,12 +116,11 @@
 	<?php include("includes/modal.php"); ?>
 	<?php include("../includes/google-bottom.php"); ?>
 	<script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
-	<script src="js/iVideo.js"></script>
+	<script src="../js/iVideo.js"></script>
 	<script src="js/nav.js"></script>
 	<script src="js/init.js"></script>
-
 	<script src="js/html5-video-background.js"></script>
-<!--	<script>
+	<script>
 		var youtubeId = document.body.dataset.youtubeId;
 		if ( youtubeId ) {
 			var tag = document.createElement( 'script' );
@@ -184,7 +175,7 @@
 				player.stopVideo();
 			}
 		}
-	</script>-->
+	</script>
 </body>
 
 </html>
