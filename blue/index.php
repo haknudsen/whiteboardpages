@@ -26,11 +26,11 @@
 	<div class="pre-loader">
 		<div></div>
 	</div>
-	<section>
 		<div id="ytVideo"></div>
 		<div class="video-overlay"></div>
 		<?php include("../includes/header-transparent.php"); ?>
 		<div>
+	<section>
 			<h1 class="banner-text stroke">Cool Whiteboard Videos, Whiteboard Sketch Videos, Drawing Animation too!</h1>
 			<div class="fifty center">
 				<div class="d-flex justify-content-center pb-5 pt-2">
@@ -133,28 +133,11 @@
 	</section>
 	<?php include("../includes/footer.php"); ?>
 	<?php include("../../ivideo/modal.php"); ?>
+	<?php include("../includes/google-bottom.php"); ?>
 	<script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
 	<script src="../../js/iVideo.js"></script>
 	<script src="../js/nav.js"></script>
 	<script src="../js/init.js"></script>
-	<!-- Google Code for Previous Visitors -->
-	<!-- Remarketing tags may not be associated with personally identifiable 
-information or placed on pages related to sensitive categories. For 
-instructions on adding this tag and more information on the above 
-requirements, read the setup guide: google.com/ads/remarketingsetup -->
-	<script type="text/javascript">
-		/* <![CDATA[ */
-		var google_conversion_id = 1058129782;
-		var google_conversion_label = "-jOyCO6ZkAIQ9o7H-AM";
-		var google_custom_params = window.google_tag_params;
-		var google_remarketing_only = true;
-		/* ]]> */
-	</script>
-	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-	</script>
-	<noscript>
-		<div style="display:inline;"> <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1058129782/?value=0&amp;label=-jOyCO6ZkAIQ9o7H-AM&amp;guid=ON&amp;script=0"/> </div>
-	</noscript>
 	<script src="js/html5-video-background.js"></script>
 	<script>
 		var youtubeId = document.body.dataset.youtubeId;
