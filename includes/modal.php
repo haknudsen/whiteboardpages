@@ -15,7 +15,7 @@
 					</p>
 				</video>
 			</div>
-			<div class="d-none" id="form">
+			<div class="d-none bg-transparent" id="form">
 				<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 				<form name="PopUp Form" id="__vtigerWebForm" action="https://websitetalkingheads.od1.vtiger.com/modules/Webforms/capture.php" enctype="multipart/form-data" method="post" accept-charset="utf-8"><input name="__vtrftk" type="hidden" value="sid:2475a3e71dbf0fb16eaa8d219013d1c07e8ee868,1545253846">
 					<input name="publicid" type="hidden" value="5979b5c0472a3584b88b3220f2367c07">
@@ -23,7 +23,7 @@
 					<input name="name" type="hidden" value="PopUp Form">
 					<input name="__vtCurrency" type="hidden" value="1">
 					<div class="quote-top">
-						<div class="">Contact Us<button type="button" class="close" id="contactClose" aria-label="Close">
+						<div class="">Contact Us<button type="button" class="pr-1 close" id="contactClose" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button></div>
 					</div>

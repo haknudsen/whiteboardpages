@@ -33,7 +33,7 @@
 			<h1 class="banner-text stroke">Cool Whiteboard Videos, Whiteboard Sketch Videos, Drawing Animation too!</h1>
 			<div class="fifty center">
 				<div class="d-flex justify-content-center pb-5 pt-2">
-					<div class="poster" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Whiteboard Animation">
+					<div class="poster" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Animated Alien Video">
 							<div class="btn-play-md"></div>
 					</div>
 				</div>
