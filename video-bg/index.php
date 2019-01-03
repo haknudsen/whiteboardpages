@@ -31,13 +31,11 @@
 		<div class="video-overlay"></div>
 		<?php include("../includes/header-transparent.php"); ?>
 		<div>
-			<h1 class="banner-text stroke">Cool Whiteboard Videos, Whiteboard Sketch Videos, Drawing Animation too!</h1>
+			<h1 class="banner-text">Cool Whiteboard Videos, Whiteboard Sketch Videos, Drawing Animation too!</h1>
 			<div class="fifty center">
 				<div class="d-flex justify-content-center pb-5 pt-2">
 					<div class="poster" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Whiteboard Animation">
-						<!--<a href="#" data-toggle="tooltip" title="Our Process" data-original-title="Our Process">-->
 							<div class="btn-play-md"></div>
-						<!--</a>-->
 					</div>
 				</div>
 				<div class="d-flex justify-content-center">
@@ -46,7 +44,7 @@
 			</div>
 		</div>
 		</div>
-		<h2 class="banner-bottom-text stroke">Hand Drawing Videos, Whiteboard Animation Videos,<br>Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
+		<h2 class="banner-bottom-text">Hand Drawing Videos, Whiteboard Animation Videos,<br>Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
 	</section>
 	<section class="alert alert-primary mb-0">
 		<div class="container">
@@ -85,8 +83,8 @@
 	</section>
 	<section class="container-fluid">
 		<div class="call-now mx-auto">
-			<h2 class="display-3 text-primary stroke">CALL NOW to Get Results!</h2>
-			<h3 class="display-3 stroke"><a href="tel://1-801-748-2281" title="Give us a call.">801-748-2281</a></h3>
+			<h2 class="display-3 text-primary">CALL NOW to Get Results!</h2>
+			<h3 class="display-3"><a href="tel://1-801-748-2281" title="Give us a call.">801-748-2281</a></h3>
 		</div>
 		</div>
 	</section>

@@ -73,11 +73,7 @@
     $show = "6";
 	$rand = true;
 	$columns = 3;
-<<<<<<< HEAD
-    include("../includes/showDemoBtn.php"); 
-=======
     include("../includes/showDemoBtn.php");
->>>>>>> whiteboard/master
     ?>
 		</div>
 	</div>
