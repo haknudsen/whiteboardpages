@@ -22,7 +22,7 @@
 	<?php include ('../../includes/googleanalytics.php'); ?>
 </head>
 
-<body data-video-mpeg="../../ivideo/videos/Whiteboard Homepage Blue.mp4" data-fade-in="true">
+<body data-video-mpeg="../../ivideo/videos/Whiteboardhomepagebluenew.mp4" data-fade-in="true">
 	<div class="pre-loader">
 		<div></div>
 	</div>
@@ -39,17 +39,17 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center">
-					<?php include( "../includes/whiteboard-form.php"); ?>
+					<?php include( "../includes/whiteboard-captcha.php"); ?>
 				</div>
 			</div>
 		</div>
 		</div>
 		<h2 class="banner-bottom-text stroke">Hand Drawing Videos, Whiteboard Animation Videos, Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
 	</section>
-	<section class="alert alert-primary mb-0">
+	<section class="alert alert-dark mb-0">
 		<div class="container">
 			<?php include( "../includes/testimonial-awards.php"); ?>
-			<h2 class="text-custom">See Custom Examples</h2>
+			<h2 class="text-white text-center">See Custom Examples</h2>
 		</div>
 	</section>
 	<section class="content p-2">
@@ -83,8 +83,8 @@
 	</section>
 	<section class="container-fluid">
 		<div class="call-now mx-auto">
-			<h2 class="display-3 text-primary stroke">CALL NOW to Get Results!</h2>
-			<h3 class="display-3 stroke"><a href="tel://1-801-748-2281" title="Give us a call.">801-748-2281</a></h3>
+			<h2 class="display-3 text-orange stroke">CALL NOW to Get Results!</h2>
+			<h3 class="display-3 text-orange stroke"><a href="tel://1-801-748-2281" title="Give us a call.">801-748-2281</a></h3>
 		</div>
 		</div>
 	</section>

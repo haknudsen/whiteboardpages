@@ -7,12 +7,12 @@ footer { text-align: center; font-size: 0.8rem; color: #00397F; font-weight: 400
 footer a { color: #00397F; }
 footer a:hover { color: #ffffff; }
 .footer-wrap { background: #66AAFF; background: -moz-radial-gradient(center, ellipse cover, #66AAFF 0%, #0072FF 100%); background: -webkit-radial-gradient(center, ellipse cover, #66AAFF 0%, #0072FF 100%); background: radial-gradient(ellipse at center, #66AAFF 0%, #0072FF 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66AAFF', endColorstr='#0072FF', GradientType=1 )}
-.navbar-light .navbar-nav .nav-link { font-weight: 300; color: #0072FF; font-size: 2vw }
+.navbar-light .navbar-nav .nav-link { font-weight: 800; color: #0072FF; font-size: 2vw }
 .navbar-light .navbar-nav .nav-link:hover { color: #6BCEFF; }
 .current-page:hover { color: #0072FF!important }
 .current-page { color: #D1F0FF!important; cursor: default }
-.navbar-text, .navbar-brand { font-size: 3vw; color: #0072FF!important; font-weight: 900 }
-.navbar-text a, .navbar-brand a { color: #0072FF!important }
+.navbar-text, .navbar-brand { font-size: 3vw; color: #FFA500!important; font-weight: 900 }
+.navbar-text a, .navbar-brand a { color: #FFA500!important }
 .bg-image { margin: 0; padding: 0 0 2rem; background: #0072FF; }
 .bg-video { margin: 0; padding: 0 0 2rem; background: #FFF; }
 .wrap { max-width: 960px; margin: 0 auto; }
@@ -24,8 +24,8 @@ a { color: #0072FF }
 a:hover { color: #66AAFF }
 .banner-text { height: 72px; margin: 0 auto; vertical-align: text-top; font-weight: bold; font-size: 2.3vw; color: #FFF; letter-spacing: -0.03em; text-align: center }
 .stroke { text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
-.banner-bottom-text { letter-spacing: 0.05em; font-weight: 800; font-size: 2.2vw; line-height: 1.3; text-align: center; padding: 2rem; color: #0072FF; max-width: 1200px; margin: 0 auto }
-.banner-bottom-text a { color: #0072FF }
+.banner-bottom-text { letter-spacing: 0.05em; font-weight: 800; font-size: 2.2vw; line-height: 1.3; text-align: center; padding: 2rem; color: white; max-width: 1200px; margin: 0 auto }
+.banner-bottom-text a { color: white }
 .banner-bottom-text a:hover { color: #0072FF }
 .call-now { text-align: center }
 .fifty { max-width: 50%; }
@@ -39,7 +39,7 @@ background-image: -khtml-gradient(linear, left top, left bottom, from(#0073FF), 
 .inputs { padding: 8px 20px 0 20px; border-color: #66AAFF; border-style: solid; border-width: 2px 2px 0 2px; background: rgba(102,170,255,0.5) }
 .inputs input, .inputs textarea { border: solid 1px #0072FF; background: white; width: 100%; margin-bottom: 8px; padding-left: 2px }
 .inputs input { line-height: 1.5rem }
-.captcha-holder { max-width: 100%; margin: 0 auto; overflow: hidden; border-left: 2px solid #66AAFF; border-right: 2px solid #66AAFF; background: #66AAFF; }
+.captcha-holder { max-width: 100%; margin: 0 auto; overflow: hidden; border-left: 2px solid #66AAFF; border-right: 2px solid #66AAFF; background: rgba(102,170,255,0.5); }
 .g-recaptcha { margin: 0 auto; width: 304px }
 .btn-holder { border-color: #66AAFF; border-style: solid; border-width: 0 2px 2px 2px; background: rgba(102,170,255,0.5); padding: .2rem 0 .6rem; border-bottom-left-radius: .5rem; border-bottom-right-radius: .5rem }
 .btn-custom { -webkit-font-smoothing: antialiased; border-radius: 16px; margin: 4px auto 0; width: 240px; font-size: 2rem!important; font-weight: 700!important; text-align: center; background-color: #0050B2!important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0073FF", endColorstr="#0050B2");
@@ -57,6 +57,8 @@ background-image: -khtml-gradient(linear, left top, left bottom, from(#eaf7ff), 
 .card-header, .card-footer { background-color: #0072FF !important; background-repeat: repeat-x;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33); -webkit-font-smoothing: antialiased; font-weight: 700; text-align: center; font-size: 2rem; color: #00397F; border-color: #0072FF;}
 .card-footer { background-image: -khtml-gradient(linear, left top, left bottom, from(#B2D4FF), to(#0072FF)); background-image: -moz-linear-gradient(top, #B2D4FF, #0072FF); background-image: -ms-linear-gradient(top, #B2D4FF, #0072FF); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #B2D4FF), color-stop(100%, #0072FF)); background-image: -webkit-linear-gradient(top, #B2D4FF, #0072FF); background-image: -o-linear-gradient(top, #B2D4FF, #0072FF); background-image: linear-gradient(#B2D4FF, #0072FF); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#B2D4FF", endColorstr="#0072FF"); }
 .card-header { background-image: -khtml-gradient(linear, left top, left bottom, from(#0072FF), to(#B2D4FF)); background-image: -moz-linear-gradient(top, #0072FF, #B2D4FF); background-image: -ms-linear-gradient(top, #0072FF, #B2D4FF); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0072FF), color-stop(100%, #B2D4FF)); background-image: -webkit-linear-gradient(top, #0072FF, #B2D4FF); background-image: -o-linear-gradient(top, #0072FF, #B2D4FF); background-image: linear-gradient(#0072FF, #B2D4FF); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0072FF", endColorstr="#B2D4FF"); border-bottom-color: #B2D4FF}
+.alert-dark{background: #00397F;color: white;border-color: #0050B2}
+.text-orange{color: #FFA500}
 /* Stuff */
 .client { text-align: center }
 .testimonials p { text-indent: 2rem; font-style: italic; line-height: 1.2; font-size: 1.2vw }
@@ -69,7 +71,7 @@ textarea { width: 100% }
 .bg-grey { background: #888888 }
 .text-custom { text-align: center; font-weight: 800; font-size: 3vw; line-height: 1; color: #0072FF }
 input, textarea { background: #D5EEFF }
-.examples { background: #328EFF; padding: 1rem; border-radius: .5rem }
+.examples { background: #00397F; padding: 1rem; border-radius: .5rem }
 .rss { text-align: center; font-size: 2rem; margin: 1rem auto; padding: 1px 3px; background: white; border-radius: 4px }
 .rss:hover { color: #0072FF }
 /* Preloader */
