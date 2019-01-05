@@ -17,7 +17,7 @@
 				</video>
 			</div>
 			<div class="d-none bg-transparent" id="form">
-				<?php include("whiteboard-captcha.php"); ?>
+				<?php include("modal-captcha.php"); ?>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-primary" id="contact">Contact Us</button>

@@ -13,7 +13,7 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://vjs.zencdn.net/7.2.4/video-js.css" rel="stylesheet">
-	<link href="../css/video.css" rel="stylesheet">
+	<link href="css/video.css" rel="stylesheet">
 	<link href="css/whiteboard.css" rel="stylesheet" type="text/css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -33,7 +33,7 @@
     $bgColor = "#7ECDF4";
     $btnColor = "#3D9CEB";
 	$alt = "Whiteboard Animation Demo";
-    include("../ivideo/showVideo.php"); 
+    include("includes/showVideo.php"); 
     ?>
 			</div>
 			<div class="col-xl-3">
@@ -57,7 +57,7 @@
     $show = "15";
 	$rand = false;
 	$columns = 3;
-    include("../ivideo/showDemo.php"); 
+    include("includes/showDemoBtn.php");
     ?>
 		</div>
 		<div class="d-box pb-1">
@@ -72,7 +72,7 @@
     $show = "6";
 	$rand = true;
 	$columns = 3;
-    include("../ivideo/showDemo.php"); 
+    include("includes/showDemoBtn.php"); 
     ?>
 		</div>
 	</div>
@@ -113,7 +113,7 @@
     $bgColor = "#D5EEFF";
     $btnColor = "#B1C8DA";
 	$alt = "Custom vs Generic Whiteboard Videos";
-    include("../ivideo/showVideo.php"); 
+    include("includes/showVideo.php"); 
     ?>
 						</div>
 						<div class="col-6">
