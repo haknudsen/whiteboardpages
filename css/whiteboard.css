@@ -50,6 +50,7 @@ textarea { width: 100% }
 .banner-text { font-size: 32px }
 .nav-link { font-size: 28px }
 #get-a-quote { max-width: 340px; float: left }
+.testimonial h2 { font-size:  28px}
 }
 
 @media screen and (max-width:1200px) {
