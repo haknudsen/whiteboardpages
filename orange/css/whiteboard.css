@@ -24,7 +24,7 @@ footer { width: 960px; margin: 0 auto; text-align: center; font-size: 0.8rem; co
 footer a { color: #401C19; }
 footer a:hover { color: #ffffff; }
 .banner-text { height: 72px; margin: 0 auto; vertical-align: text-top; font-weight: bold; font-size: 2.5vw; color: #222222; line-height: 72px; letter-spacing: -0.03em; text-align: center }
-.banner-bottom-text { font-weight: bold; font-size: 3vw; line-height: 1; text-align: center; margin: 0 auto; padding: 1rem 0 }
+.banner-bottom-text { font-weight: bold; font-size: 3vw; line-height: 1; text-align: center; margin: 0 auto; padding: 1rem 0;max-width: 900px;margin: 0 auto }
 .call-now { text-align: center }
 .fifty { max-width: 50%; }
 .center { margin: 0 auto }
@@ -46,8 +46,9 @@ background-image: -khtml-gradient(linear, left top, left bottom, from(#eaf7ff), 
 .btn-custom:hover { background-color: hsl(201, 100%, 64%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eaf7ff", endColorstr="#47beff");
 background-image: -khtml-gradient(linear, left top, left bottom, from(#eaf7ff), to(#47beff)); background-image: -moz-linear-gradient(top, #eaf7ff, #47beff); background-image: -ms-linear-gradient(top, #eaf7ff, #47beff); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaf7ff), color-stop(100%, #47beff)); background-image: -webkit-linear-gradient(top, #eaf7ff, #47beff); background-image: -o-linear-gradient(top, #eaf7ff, #47beff); background-image: linear-gradient(#eaf7ff, #47beff); border-color: #47beff #47beff hsl(201, 100%, 56%); color: #0050B2 !important; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); }
 .client { text-align: center }
-.testimonials p { text-indent: 2rem; font-style: italic; line-height: 1.2; font-size: 1.5 }
-.caption { float: right; font-weight: bold; font-size: 2rem }
+.testimonials p { text-indent: 2rem; font-style: italic; line-height: 1.2; font-size: 1.2vw }
+.testimonial h2{font-size: 1.6vw}
+.caption { float: right; font-weight: bold; font-size: 1.4vw }
 .best { margin: 0 auto }
 .award { width: 75%; margin: 0 auto }
 textarea { width: 100% }
