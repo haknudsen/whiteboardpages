@@ -38,7 +38,7 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center">
-					<?php include( "includes/whiteboard-form.php"); ?>
+					<?php include( "includes/whiteboard-captcha.php"); ?>
 				</div>
 			</div>
 		</div>
@@ -83,7 +83,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="container p-2">
+	<section class="container p-2 text-light stroke">
 		<?php include( "includes/testimonial-awards.php"); ?>
 	</section>
 	<section class="content">
