@@ -30,11 +30,11 @@ switch ( $type ) {
 		break;
 	case "Presentation":
 		$sql .= " 	WHERE presentation=true";
-		array_push( $keyword, "Custom Video","Video Presentation","Web Marketing Video","Web Video Production","Spokesperson Video" );
+		array_push( $keyword, "Custom Video", "Video Presentation", "Web Marketing Video", "Web Video Production", "Spokesperson Video" );
 		break;
 	case "Demo":
 		$sql .= " 	WHERE demo=true";
-		array_push( $keyword, "Custom Video","Video Presentation","Example Video","Demo Video" );
+		array_push( $keyword, "Custom Video", "Video Presentation", "Example Video", "Demo Video" );
 		break;
 	default:
 		array_push( $keyword, "Web Video", "Online Video", "Website Video" );
@@ -43,7 +43,7 @@ switch ( $type ) {
 
 if ( $rand === true ) {
 	$sql .= " ORDER BY RAND()";
-}else{
+} else {
 	$sql .= " ORDER BY rank";
 }
 if ( $show > 0 ) {
@@ -84,6 +84,31 @@ if ( $result->num_rows > 0 ) {
 		echo PHP_EOL;
 		echo '</div>';
 		echo PHP_EOL;
+		echo '<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "VideoObject",
+		"name": "' . $video . '",
+		"description": "' . $alt . '",
+		"thumbnailUrl": "https://www.websitetalkingheads.com/ivideo/videos/' . $video . '.jpg",
+		"uploadDate": "2018-11-31T08:00:00+08:00",
+		"duration": "PT1M54S",
+		"publisher": {
+			"@type": "Organization",
+			"name": "Website Talking Heads",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://www.websitetalkingheads.com/images/Talking_Heads_Banner_Logo.png",
+				"width": 247,
+				"height": 100
+			}
+		},
+		"contentUrl": "https://www.websitetalkingheads.com/ivideo/videos/' . $video . '.mp4",
+		"embedUrl": "https://www.websitetalkingheads.com/ivideo/videos/' . $video . '",
+		"interactionCount": "7018"
+	}
+</script>
+';
 	}
 } else {
 	echo "0 results";
