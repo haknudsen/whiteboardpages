@@ -46,7 +46,7 @@
 		</div>
 		<h2 class="banner-bottom-text">Hand Drawing Videos, Whiteboard Animation Videos,<br>Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
 	</section>
-	<section class="alert alert-primary mb-0">
+	<section class="alert alert-dark mb-0">
 		<div class="container">
 			<?php include( "../includes/testimonial-awards.php"); ?>
 			<h2 class="text-custom">See Custom Examples</h2>
