@@ -130,6 +130,7 @@
 <script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
 <script src="../js/iVideo.js"></script>
 <script src="js/nav.js"></script>
+<?php include("includes/google-bottom.php"); ?>
 </body>
 
 </html>
