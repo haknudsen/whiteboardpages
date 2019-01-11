@@ -70,11 +70,6 @@ background-image: -khtml-gradient(linear, left top, left bottom, from(#FFEDCC), 
 .pre-loader { background-color: #fff; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1000000000; z-index: 99999999; opacity: 1; -webkit-transition: opacity .3s; -moz-transition: opacity .3s; transition: opacity .3s; }
 .pre-loader div {  text-indent: -9999em; top: 50%; height: 50px; width: 50px; position: relative; margin: -25px auto 0 auto; display: block; border-top: 2px solid rgba(0,0,0, 0.2); border-right: 2px solid rgba(0,0,0, 0.2); border-bottom: 2px solid rgba(0,0,0, 0.2); border-left: 2px solid #111; -webkit-transform: translateZ(0); -ms-transform: translateZ(0); transform: translateY(50%); -webkit-animation: load9 1.1s infinite linear; animation: load9 1.1s infinite linear; }
 .pre-loader div, .pre-loader div:after { border-radius: 50%; width: 40px; height: 40px; }
-.alert-dark {
-    background: #00397F;
-    color: white;
-    border-color: #0050B2;
-}
 @-webkit-keyframes load9 {
  0% {
  -webkit-transform: rotate(0deg);
