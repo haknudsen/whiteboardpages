@@ -4,7 +4,6 @@ $video-video video
 $alt- alt tag contents
 #bgColor-background color
  */
-require( "connect-demo.php" );
 if ( !$alt ) {
 	$alt = "Custom Video Example";
 }
@@ -29,18 +28,16 @@ echo '<script type="application/ld+json">
 		"@context": "https://schema.org",
 		"@type": "VideoObject",
 		"name": "' . $video . '",
-		"description": "' . $alt . '",
+		"description": "' . $video . ' - ' . $alt . '",
 		"thumbnailUrl": "https://www.websitetalkingheads.com/ivideo/videos/' . $video . '.jpg",
-		"uploadDate": "2018-11-31T08:00:00+08:00",
+		"uploadDate": "2018-12-23T08:00:00+08:00",
 		"duration": "PT1M54S",
 		"publisher": {
 			"@type": "Organization",
 			"name": "Website Talking Heads",
 			"logo": {
 				"@type": "ImageObject",
-				"url": "https://www.websitetalkingheads.com/images/Talking_Heads_Banner_Logo.png",
-				"width": 247,
-				"height": 100
+				"url": "https://www.websitetalkingheads.com/images/Talking_Heads_Banner_Logo.png"
 			}
 		},
 		"contentUrl": "https://www.websitetalkingheads.com/ivideo/videos/' . $video . '.mp4",
