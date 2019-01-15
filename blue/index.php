@@ -26,25 +26,25 @@
 	<div class="pre-loader">
 		<div></div>
 	</div>
-		<div id="ytVideo"></div>
-		<div class="video-overlay"></div>
-		<?php include("../includes/header-transparent.php"); ?>
-		<div>
-	<section>
+	<div id="ytVideo"></div>
+	<div class="video-overlay"></div>
+	<?php include("../includes/header-transparent.php"); ?>
+	<div>
+		<section>
 			<h1 class="banner-text stroke">Cool Whiteboard Videos, Whiteboard Sketch Videos, Drawing Animation too!</h1>
 			<div class="fifty center">
 				<div class="d-flex justify-content-center pb-5 pt-2">
 					<div class="poster" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="Whiteboard Animation">
-							<div class="btn-play-md"></div>
+						<div class="btn-play-md"></div>
 					</div>
 				</div>
 				<div class="d-flex justify-content-center">
-					<?php include( "../includes/whiteboard-captcha.php"); ?>
+					<?php include( "../includes/whiteboard-form-no-captcha.php"); ?>
 				</div>
 			</div>
-		</div>
-		</div>
-		<h2 class="banner-bottom-text stroke">Hand Drawing Videos, Whiteboard Animation Videos, Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
+	</div>
+	</div>
+	<h2 class="banner-bottom-text stroke">Hand Drawing Videos, Whiteboard Animation Videos, Whiteboard Sketch, Video Scribe and Cartoon Doodle Videos.</h2>
 	</section>
 	<section class="alert alert-dark mb-0">
 		<div class="container">
@@ -131,9 +131,8 @@
 			</div>
 		</div>
 	</section>
-	<?php include("../includes/footer.php"); ?>
-	<?php include("../../ivideo/modal.php"); ?>
-	<?php include("../includes/google-bottom.php"); ?>
+	<?php include("../includes/footer.php"); ?>?>
+	<?php include("../includes/modal-no-form.php"); ?>
 	<script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
 	<script src="../../js/iVideo.js"></script>
 	<script src="../js/nav.js"></script>
