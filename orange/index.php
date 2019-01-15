@@ -37,7 +37,7 @@
     ?>
 			</div>
 			<div class="col-xl-3">
-				<?php include( "../includes/whiteboard-captcha.php"); ?>
+				<?php include( "../includes/whiteboard-form-no-captcha.php"); ?>
 			</div>
 		</div>
 	</div>

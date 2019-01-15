@@ -70,6 +70,8 @@ background-image: -khtml-gradient(linear, left top, left bottom, from(#FFEDCC), 
 .banner-text { font-size: 32px }
 .nav-link { font-size: 28px }
 #get-a-quote { max-width: 340px; float: left }
+.testimonial h2 { font-size: 28px }
+.testimonials p { font-size: 22px }
 }
 
 @media screen and (max-width:1200px) {
