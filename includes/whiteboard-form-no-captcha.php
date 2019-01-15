@@ -15,25 +15,27 @@ if ( isset( $_SERVER[ 'HTTP_X_FORWARDED_FOR' ] ) && $_SERVER[ 'HTTP_X_FORWARTDED
 	$sentIP = $_SERVER[ 'REMOTE_ADDR' ];
 }
 ?>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<form name="whiteboard leads" id="__vtigerWebForm" action="https://websitetalkingheads.od1.vtiger.com/modules/Webforms/capture.php" enctype="multipart/form-data" method="post" accept-charset="utf-8"><input name="__vtrftk" type="hidden" value="sid:de319833f327ce43bb58b216d6df89038387377f,1545512884">
-	<input name="publicid" type="hidden" value="0b6d70228937303c28f8d526dab8ef97">
-	<input name="urlencodeenable" type="hidden" value="1">
-	<input name="name" type="hidden" value="whiteboard leads">
-	<input name="__vtCurrency" type="hidden" value="1">
-	<div class="quote-top">Get A Quote</div>
-	<div class="inputs">
-		<input name="lastname" required="" type="text" placeholder="Name" data-label=""> </td>
-		<input name="email" required="" type="email" placeholder="Email" data-label=""> </td>
-		<input name="phone" required="" type="text" placeholder="Phone" data-label=""> </td>
-		<input name="cf_1001" type="hidden" value="<?=$pageURL?>" data-label="">
-		<input name="designation" type="hidden" value="<?=$sentIP?>" data-label="">
-		<textarea name="description" placeholder="Message"></textarea>
-	</div>
-	<div class="d-flex btn-holder">
-		<input class="btn btn-custom" id="vtigerFormSubmitBtn" type="submit" value="I Need Video">
-	</div>
-</form>
+<div id="get-a-quote">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<form name="whiteboard leads" id="__vtigerWebForm" action="https://websitetalkingheads.od1.vtiger.com/modules/Webforms/capture.php" enctype="multipart/form-data" method="post" accept-charset="utf-8"><input name="__vtrftk" type="hidden" value="sid:de319833f327ce43bb58b216d6df89038387377f,1545512884">
+		<input name="publicid" type="hidden" value="0b6d70228937303c28f8d526dab8ef97">
+		<input name="urlencodeenable" type="hidden" value="1">
+		<input name="name" type="hidden" value="whiteboard leads">
+		<input name="__vtCurrency" type="hidden" value="1">
+		<div class="quote-top">Get A Quote</div>
+		<div class="inputs">
+			<input name="lastname" required="" type="text" placeholder="Name" data-label=""> </td>
+			<input name="email" required="" type="email" placeholder="Email" data-label=""> </td>
+			<input name="phone" required="" type="text" placeholder="Phone" data-label=""> </td>
+			<input name="cf_1001" type="hidden" value="<?=$pageURL?>" data-label="">
+			<input name="designation" type="hidden" value="<?=$sentIP?>" data-label="">
+			<textarea name="description" placeholder="Message"></textarea>
+		</div>
+		<div class="d-flex btn-holder">
+			<input class="btn btn-custom" id="vtigerFormSubmitBtn" type="submit" value="I Need Video">
+		</div>
+	</form>
+</div>
 <script type="text/javascript">
 	window.onload = function () {
 		var N = navigator.appName,
