@@ -38,7 +38,7 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center">
-					<?php include( "includes/whiteboard-captcha.php"); ?>
+					<?php include( "includes/whiteboard-form-no-captcha.php"); ?>
 				</div>
 			</div>
 		</div>

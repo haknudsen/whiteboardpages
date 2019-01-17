@@ -37,7 +37,7 @@
     ?>
 			</div>
 			<div class="col-xl-3">
-				<?php include( "includes/whiteboard-captcha.php"); ?>
+				<?php include( "includes/whiteboard-form-no-captcha.php"); ?>
 			</div>
 		</div>
 	</div>
@@ -130,7 +130,6 @@
 <script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
 <script src="../js/iVideo.js"></script>
 <script src="js/nav.js"></script>
-<?php include("includes/google-bottom.php"); ?>
 </body>
 
 </html>

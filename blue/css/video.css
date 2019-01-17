@@ -21,10 +21,7 @@
 .btn-play-md::before{ font-size: 42px; }
 .poster .btn-play-md { height: 72px; width: 72px; }
 .poster-title{color: #E5F0FF;font-weight: 600}
-.spokesperson,.spokesperson img{width: 160px;height: 180px}
 .text-orange a{color: #FFAE19}
-.modal-spokesperson .modal-dialog{width:  542px}
-.modal-open .modal{overflow: hidden}
 /*----------------------------*/
 #bgVideo, #ytVideo, .video-overlay { position: fixed; top: 0px; left: 0px; min-width: 100%; min-height: 50%; width: auto; height: auto; z-index: -1000; overflow: hidden; }
 .video-overlay { z-index: -100; }
