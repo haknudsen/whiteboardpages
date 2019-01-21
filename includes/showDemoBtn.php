@@ -30,11 +30,11 @@ switch ( $type ) {
 		break;
 	case "Presentation":
 		$sql .= " 	WHERE presentation=true";
-		array_push( $keyword, "Custom Video","Video Presentation","Web Marketing Video","Web Video Production","Spokesperson Video" );
+		array_push( $keyword, "Custom Video", "Video Presentation", "Web Marketing Video", "Web Video Production", "Spokesperson Video" );
 		break;
 	case "Demo":
 		$sql .= " 	WHERE demo=true";
-		array_push( $keyword, "Custom Video","Video Presentation","Example Video","Demo Video" );
+		array_push( $keyword, "Custom Video", "Video Presentation", "Example Video", "Demo Video" );
 		break;
 	default:
 		array_push( $keyword, "Web Video", "Online Video", "Website Video" );
@@ -43,7 +43,7 @@ switch ( $type ) {
 
 if ( $rand === true ) {
 	$sql .= " ORDER BY RAND()";
-}else{
+} else {
 	$sql .= " ORDER BY rank";
 }
 if ( $show > 0 ) {
@@ -74,7 +74,8 @@ if ( $result->num_rows > 0 ) {
 		$altNum = array_rand( $keyword, 1 );
 		$alt = $altNum[ $keyword ];
 		$name = $row[ "Name" ];
-		echo '<div class="col-lg-' . $span . ' poster" alt="' . $keyword[ $altNum ] . " Example" . '" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="' . $name . '">';
+		$description = $row["description"];
+		echo '<div class="col-lg-' . $span . ' poster" alt="' . $keyword[ $altNum ] . ' Example" data-toggle="modal" data-target=".bd-example-modal-lg" data-video="' . $name . '">';
 		echo PHP_EOL;
 		echo '<img src="https://www.websitetalkingheads.com/ivideo/videos/' . $name . '.jpg" class="img-fluid video" alt="' . $keyword[ $altNum ] . " Example" . '">';
 		echo PHP_EOL;
@@ -83,7 +84,29 @@ if ( $result->num_rows > 0 ) {
 		echo '<div class="poster-title text-center">' . $name . '</div>';
 		echo PHP_EOL;
 		echo '</div>';
-		echo PHP_EOL;
+		echo PHP_EOL;echo '<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "VideoObject",
+		"name": "' . $video . '",
+		"description": "' . $description . '",
+		"thumbnailUrl": "https://www.websitetalkingheads.com/ivideo/videos/' . $video . '.jpg",
+		"uploadDate": "2018-12-23T08:00:00+08:00",
+		"duration": "PT1M54S",
+		"publisher": {
+			"@type": "Organization",
+			"name": "Website Talking Heads",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://www.websitetalkingheads.com/images/Talking_Heads_Banner_Logo.png"
+			}
+		},
+		"contentUrl": "https://www.websitetalkingheads.com/ivideo/videos/' . $video . '.mp4",
+		"embedUrl": "https://www.websitetalkingheads.com/ivideo/videos/' . $video . '",
+		"interactionCount": "7018"
+	}
+</script>
+';
 	}
 } else {
 	echo "0 results";

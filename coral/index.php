@@ -39,7 +39,7 @@
 				<?php include("../../includes/awards-column.php"); ?>
 			</div>
 			<div class="col-xl-3">
-				<?php include( "../includes/contact-captcha.php"); ?>
+				<?php include( "../includes/whiteboard-captcha.php"); ?>
 			</div>
 		</div>
 	</div>
@@ -130,7 +130,7 @@
 	</div>
 </section>
 <?php include("../includes/footer.php"); ?>
-<?php include("../../ivideo/modal-no-form.php"); ?>
+<?php include("../includes/modal-no-form.php"); ?>
 <script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
 <script src="../../js/iVideo.js"></script>
 <script src="../js/nav.js"></script>

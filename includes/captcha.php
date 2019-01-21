@@ -1,41 +1,62 @@
-<?php
-$pageURL = 'http';
-if ( $_SERVER[ "HTTPS" ] == "on" ) {
-	$pageURL .= "s";
-}
-$pageURL .= "://";
-if ( $_SERVER[ "SERVER_PORT" ] != "80" ) {
-	$pageURL .= $_SERVER[ "SERVER_NAME" ] . ":" . $_SERVER[ "SERVER_PORT" ] . $_SERVER[ "REQUEST_URI" ];
-} else {
-	$pageURL .= $_SERVER[ "SERVER_NAME" ] . $_SERVER[ "REQUEST_URI" ];
-}
-if ( isset( $_SERVER[ 'HTTP_X_FORWARDED_FOR' ] ) && $_SERVER[ 'HTTP_X_FORWARTDED_FOR' ] != '' ) {
-	$sentIP = $_SERVER[ 'HTTP_X_FORWARDED_FOR' ];
-} else {
-	$sentIP = $_SERVER[ 'REMOTE_ADDR' ];
-}
-?>
-<div id="get-a-quote">
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<form name="whiteboard leads" id="__vtigerWebForm" action="https://websitetalkingheads.od1.vtiger.com/modules/Webforms/capture.php" enctype="multipart/form-data" method="post" accept-charset="utf-8"><input name="__vtrftk" type="hidden" value="sid:de319833f327ce43bb58b216d6df89038387377f,1545512884">
-		<input name="publicid" type="hidden" value="0b6d70228937303c28f8d526dab8ef97">
-		<input name="urlencodeenable" type="hidden" value="1">
-		<input name="name" type="hidden" value="whiteboard leads">
-		<input name="__vtCurrency" type="hidden" value="1">
-		<div class="quote-top">Get A Quote</div>
-		<div class="inputs">
-			<input name="lastname" required="" type="text" placeholder="Name" data-label=""> </td>
-			<input name="email" required="" type="email" placeholder="Email" data-label=""> </td>
-			<input name="phone" required="" type="text" placeholder="Phone" data-label=""> </td>
-			<input name="cf_1001" type="hidden" value="<?=$pageURL?>" data-label="">
-			<input name="designation" type="hidden" value="<?=$sentIP?>" data-label="">
-			<textarea name="description" placeholder="Message"></textarea>
-		</div>
-		<div class="d-flex btn-holder">
-			<input class="btn btn-custom" id="vtigerFormSubmitBtn" type="submit" value="I Need Video">
-		</div>
-	</form>
-</div>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<form name="Whiteboard Captcha" id="__vtigerWebForm" action="https://websitetalkingheads.od1.vtiger.com/modules/Webforms/capture.php" enctype="multipart/form-data" method="post" accept-charset="utf-8"><input name="__vtrftk" type="hidden" value="sid:8e164394fcb7dd9f9ff3a02e20ca3a7b3f98e8a6,1547589873">
+	<input name="publicid" type="hidden" value="e3342afbff2983a5148df30f6d7dbe5b">
+	<input name="urlencodeenable" type="hidden" value="1">
+	<input name="name" type="hidden" value="Whiteboard Captcha">
+	<input name="__vtCurrency" type="hidden" value="1">
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<label>Last Name*</label>
+
+				</td>
+				<td>
+					<input name="lastname" required="" type="text" maxlength="100" value="" data-label=""> </td>
+			</tr>
+			<tr>
+				<td>
+					<label>Primary Email*</label>
+
+				</td>
+				<td>
+					<input name="email" required="" type="email" value="" data-label="Primary Email" td="" <="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Primary Phone*</label>
+
+				</td>
+				<td>
+					<input name="phone" required="" type="text" maxlength="100" value="" data-label=""> </td>
+			</tr>
+			<tr>
+				<td>
+
+					<input name="cf_1001" type="hidden" maxlength="100" value="" data-label=""> </td>
+			</tr>
+			<tr>
+				<td>
+					<input name="designation" type="hidden" maxlength="100" value="" data-label=""> </td>
+			</tr>
+			<tr>
+				<td>
+					<label>Description</label>
+
+				</td>
+				<td>
+					<textarea name="description"></textarea>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<div class="g-recaptcha" data-sitekey="6LcmdSATAAAAAGWw734vGo0AXQwuxJS7RmDZA_Fe"></div>
+	<input id="captchaUrl" type="hidden" value="https://websitetalkingheads.od1.vtiger.com/modules/Settings/Webforms/actions/ValidateCaptcha.php">
+	<input name="recaptcha_validation_value" id="recaptcha_validation_value" type="hidden">
+	<input id="vtigerFormSubmitBtn" type="submit" value="Submit">
+</form>
 <script type="text/javascript">
 	window.onload = function () {
 		var N = navigator.appName,
@@ -187,6 +208,45 @@ if ( isset( $_SERVER[ 'HTTP_X_FORWARDED_FOR' ] ) && $_SERVER[ 'HTTP_X_FORWARTDED
 					return false;
 				}
 			}
+			document.getElementById( "vtigerFormSubmitBtn" ).disabled = true;
+			var recaptchaValidationValue = document.getElementById( "recaptcha_validation_value" ).value;
+			if ( recaptchaValidationValue != true ) {
+				var recaptchaResponse = document.getElementsByName( "g-recaptcha-response" )[ 0 ].value;
+				var currentUrl = window.location.href;
+				var urlHash = window.location.hash;
+				currentUrl = currentUrl.replace( urlHash, "" );
+				currentUrl = currentUrl.replace( "#", "" );
+				var validationUrl = document.getElementById( "captchaUrl" ).value + "?recaptcha_response=" + recaptchaResponse + "&current_url=" + currentUrl + "&callback=captchaCallback";
+				jsonp.fetch( validationUrl );
+				return false;
+			}
 		};
+	};
+	var jsonp = {
+		callbackCounter: 0,
+		fetch: function ( url ) {
+			url = url + "&callId=" + this.callbackCounter;
+			var scriptTag = document.createElement( "SCRIPT" );
+			scriptTag.src = url;
+			scriptTag.async = true;
+			scriptTag.id = "captchaCallback_" + this.callbackCounter;
+			scriptTag.type = "text/javascript";
+			document.getElementsByTagName( "HEAD" )[ 0 ].appendChild( scriptTag );
+			this.callbackCounter++;
+		}
+	};
+
+	function captchaCallback( data ) {
+		if ( data.result.success == true ) {
+			document.getElementById( "recaptcha_validation_value" ).value = true;
+			var form = document.getElementById( "__vtigerWebForm" );
+			form.submit();
+		} else {
+			document.getElementById( "vtigerFormSubmitBtn" ).disabled = false;
+			grecaptcha.reset();
+			alert( "Captcha not verified. Please verify captcha." );
+		}
+		var element = document.getElementById( "captchaCallback_" + data.result.callId );
+		element.parentNode.removeChild( element );
 	}
 </script>
